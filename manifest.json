@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "rapid-ai",
+	"name": "Rapid AI",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "AI Assistant for selected text and generating content with Markdown. Shortcuts and quick action buttons provide instant AI assistance. It provides a high availability API for unlimited Chat GPT request rates, so you can ensure smooth work for any workload.",
+	"author": "Rapid AI",
+	"authorUrl": "https://rapidapi.com/organization/obsidian-api",
+	"fundingUrl": "https://rapidapi.com/obsidian-api-obsidian-api-default/api/obsidian-ai/pricing",
 	"isDesktopOnly": false
 }

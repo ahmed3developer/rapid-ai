@@ -12,7 +12,7 @@
     "isolatedModules": true,
 	"strictNullChecks": true,
     "lib": [
-      "DOM",
+      "DOM", 
       "ES5",
       "ES6",
       "ES7"

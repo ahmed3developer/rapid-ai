@@ -1,96 +1,71 @@
-# Obsidian Sample Plugin
+# About the Rapid AI Plugin
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+Elevate your productivity with an AI assistant that enables rapid content generation, integrates selected text actions, provides keyboard shortcuts, and offers quick-action buttons, all accessible from various workspace points.
 
-This project uses Typescript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definition format, which contains TSDoc comments describing what it does.
+-   Instant AI assistant for generating content
+-   Selected Text Integration: Quickly perform any AI action on selected text.
+-   Keyboard Shortcuts and quick action buttons
+-   Access the AI assistant from anywhere in your vault, sidebar, status bar, context menu, and command line.
+-   High availability API to provide unlimited request rates for an efficient workflow.
 
-**Note:** The Obsidian API is still in early alpha and is subject to change at any time!
+# Screenshots and Examples
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open Sample Modal" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and output 'click' to the console.
-- Registers a global interval which logs 'setInterval' to the console.
+![https://i.imgur.com/RoHc7Mu.png](https://i.imgur.com/RoHc7Mu.png)
 
-## First time developing plugins?
+![https://i.imgur.com/TDEi0sj.png](https://i.imgur.com/TDEi0sj.png)
 
-Quick starting guide for new plugin devs:
+![https://i.imgur.com/oEWAe78.png](https://i.imgur.com/oEWAe78.png)
 
-- Check if [someone already developed a plugin for what you want](https://obsidian.md/plugins)! There might be an existing plugin similar enough that you can partner up with.
-- Make a copy of this repo as a template with the "Use this template" button (login to GitHub if you don't see it).
-- Clone your repo to a local development folder. For convenience, you can place this folder in your `.obsidian/plugins/your-plugin-name` folder.
-- Install NodeJS, then run `npm i` in the command line under your repo folder.
-- Run `npm run dev` to compile your plugin from `main.ts` to `main.js`.
-- Make changes to `main.ts` (or create new `.ts` files). Those changes should be automatically compiled into `main.js`.
-- Reload Obsidian to load the new version of your plugin.
-- Enable plugin in settings window.
-- For updates to the Obsidian API run `npm update` in the command line under your repo folder.
+![https://i.imgur.com/g8EioS3.png](https://i.imgur.com/g8EioS3.png)
 
-## Releasing new releases
+![https://i.imgur.com/pUjg0ad.png](https://i.imgur.com/pUjg0ad.png)
 
-- Update your `manifest.json` with your new version number, such as `1.0.1`, and the minimum Obsidian version required for your latest release.
-- Update your `versions.json` file with `"new-plugin-version": "minimum-obsidian-version"` so older versions of Obsidian can download an older version of your plugin that's compatible.
-- Create new GitHub release using your new version number as the "Tag version". Use the exact version number, don't include a prefix `v`. See here for an example: https://github.com/obsidianmd/obsidian-sample-plugin/releases
-- Upload the files `manifest.json`, `main.js`, `styles.css` as binary attachments. Note: The manifest.json file must be in two places, first the root path of your repository and also in the release.
-- Publish the release.
+![https://i.imgur.com/F4PgE0E.png](https://i.imgur.com/F4PgE0E.png)
 
-> You can simplify the version bump process by running `npm version patch`, `npm version minor` or `npm version major` after updating `minAppVersion` manually in `manifest.json`.
-> The command will bump version in `manifest.json` and `package.json`, and add the entry for the new version to `versions.json`
+![https://i.imgur.com/H6P71cc.png](https://i.imgur.com/H6P71cc.png)
 
-## Adding your plugin to the community plugin list
+## Correct Grammar Quick Action Button Example
 
-- Check https://github.com/obsidianmd/obsidian-releases/blob/master/plugin-review.md
-- Publish an initial version.
-- Make sure you have a `README.md` file in the root of your repo.
-- Make a pull request at https://github.com/obsidianmd/obsidian-releases to add your plugin.
+[![Correct Grammar Quick Action Button Example](https://img.youtube.com/vi/xwSSV1A5d9Y/0.jpg)](https://www.youtube.com/watch?v=xwSSV1A5d9Y)
 
-## How to use
+## Translate Quick Action Button Example
 
-- Clone this repo.
-- Make sure your NodeJS is at least v16 (`node --version`).
-- `npm i` or `yarn` to install dependencies.
-- `npm run dev` to start compilation in watch mode.
+[![Translate Quick Action Button Example](https://img.youtube.com/vi/oMhOQRrGOG0/0.jpg)](https://www.youtube.com/watch?v=oMhOQRrGOG0)
 
-## Manually installing the plugin
+## Generate Diagrams Example
 
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
+[![Generate Diagrams Example](https://img.youtube.com/vi/ShilXnCGjxQ/0.jpg)](https://www.youtube.com/watch?v=ShilXnCGjxQ)
 
-## Improve code quality with eslint (optional)
-- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. 
-- To use eslint with this project, make sure to install eslint from terminal:
-  - `npm install -g eslint`
-- To use eslint to analyze this project use this command:
-  - `eslint main.ts`
-  - eslint will then create a report with suggestions for code improvement by file and line number.
-- If your source code is in a folder, such as `src`, you can use eslint with this command to analyze all files in that folder:
-  - `eslint .\src\`
+## Adjust Python Code Example
 
-## Funding URL
+[![Adjust Python Code Example](https://img.youtube.com/vi/fSWkXwvg3d0/0.jpg)](https://www.youtube.com/watch?v=fSWkXwvg3d0)
 
-You can include funding URLs where people who use your plugin can financially support it.
+# How to Get an API Key
 
-The simple way is to set the `fundingUrl` field to your link in your `manifest.json` file:
+This plugin uses an API called 'Obsidian AI API.' To obtain an API key, follow these steps:
 
-```json
-{
-    "fundingUrl": "https://buymeacoffee.com"
-}
-```
+-   Subscribe to the API [from here](https://rapidapi.com/obsidian-api-obsidian-api-default/api/obsidian-ai).
+-   Copy the API key from the `X-RapidAPI-Key` field.
+-   Navigate to the plugin settings and paste the API key into the `API Key` textbox.
 
-If you have multiple URLs, you can also do:
+You can test the API key by clicking on the “Test Key” button on the plugin settings page. Now you are ready to use the plugin.
 
-```json
-{
-    "fundingUrl": {
-        "Buy Me a Coffee": "https://buymeacoffee.com",
-        "GitHub Sponsor": "https://github.com/sponsors",
-        "Patreon": "https://www.patreon.com/"
-    }
-}
-```
+You can also watch this tutorial.
 
-## API Documentation
+[https://youtu.be/tp3O40bBqs0](https://youtu.be/tp3O40bBqs0)
 
-See https://github.com/obsidianmd/obsidian-api
+# How to Change Shortcuts
+
+You can add and change shortcuts for showing the AI assistant by following these steps:
+
+-   Navigate to settings.
+-   Access the "Community plugins" section.
+-   Locate the Rapid AI plugin under the "Installed Plugins" section.
+-   Click on the plus button representing hotkey settings.
+-   Modify or reset the shortcut according to your preference.
+
+![https://i.imgur.com/Ew5249d.png](https://i.imgur.com/Ew5249d.png)
+
+You can watch this tutorial video.
+
+[https://youtu.be/N8SG263By2Y](https://youtu.be/N8SG263By2Y)

@@ -1,8 +1,628 @@
-/*
+.copy-icon-button {
+	cursor: auto;
+}
+.copy-icon-button:hover {
+	cursor: pointer;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.normal-modal-main-div {
+	padding-left: 24;
+	padding-right: 24;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
 
-If your plugin does not need CSS, delete this file.
+.normal-modal-input-title-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
-*/
+.normal-modal-input-title-text {
+	margin-left: 8px;
+}
+
+.normal-modal-input-textbox-div {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	border-radius: 12px;
+}
+
+.normal-modal-input-textbox {
+	padding: 14px 16px;
+	min-height: 100px;
+	resize: none;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 8px;
+	line-height: 28px;
+}
+
+.normal-modal-input-tip-div {
+	display: flex;
+	flex-direction: row;
+	margin-top: 18px;
+	align-items: start;
+	margin-left: auto;
+}
+
+.normal-modal-input-tip-icon {
+	padding: 0px 4px;
+}
+
+.normal-modal-input-send-button {
+	width: auto;
+	font-size: 14px;
+	min-height: 38px;
+	border-radius: 8px;
+	margin-top: 18px;
+	margin-left: auto;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.normal-modal-output-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.normal-modal-output-title {
+	margin-left: 8px;
+}
+
+.normal-modal-output-textbox-div {
+	position: relative;
+	border-radius: 12px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.normal-modal-output-textbox {
+	padding: 14px 16px;
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	resize: none;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 8px;
+	line-height: 28px;
+}
+
+.normal-modal-copy-button {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+}
+
+.normal-modal-output-insert-button {
+	width: auto;
+	min-height: 42px;
+	border-radius: 8px;
+	margin-top: 18px;
+	margin-left: auto;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.normal-modal-output-insert-button-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.normal-modal-ouput-submit-icon {
+	margin: 4px 8px 0px 4px;
+}
+
+.normal-modal-ouput-submit-text {
+	text-align: center;
+}
+
+.selection-modal-icon-button {
+	width: auto;
+	min-height: 42px;
+	border-radius: 8px;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.selection-modal-icon-button-icon {
+	margin: 4px 8px 0px 4px;
+}
+
+.selection-modal-icon-button-text {
+	text-align: center;
+}
+
+.selection-modal-input-main-div {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.selection-modal-input-title-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.selection-modal-input-title {
+	margin-left: 8px;
+}
+
+.selection-modal-input-selected-text-div {
+	font-size: 16px;
+	font-weight: 500;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 500px;
+}
+
+.selection-modal-input-textbox-div {
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin-top: 21px;
+}
+
+.selection-modal-input-actions-div {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+}
+
+.selection-modal-input-translate-button {
+	margin-left: 18px;
+}
+
+.selection-modal-input-format-button {
+	margin-left: 18px;
+}
+
+.selection-modal-input-textbox {
+	padding: 14px 16px;
+	resize: none;
+	max-height: 230px;
+	font-size: 16px;
+	font-weight: 400px;
+	border-radius: 8px;
+	line-height: 28px;
+	border-width: 1px;
+}
+
+.selection-modal-send-button {
+	width: auto;
+	font-size: 14px;
+	min-height: 38px;
+	border-radius: 8px;
+	margin-top: 18px;
+	margin-left: auto;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.selection-modal-output-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.selection-modal-output-title {
+	margin-left: 8px;
+}
+
+.selection-modal-output-textbox-div {
+	position: relative;
+	border-radius: 12px;
+	padding: 0px;
+}
+
+.selection-modal-output-textbox {
+	padding: 14px 16px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	resize: none;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 8px;
+	line-height: 28px;
+}
+
+.selection-modal-output-copy-button {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+}
+
+.selection-modal-output-insert-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: auto;
+	min-height: 42px;
+	border-radius: 8px;
+	margin-top: 18px;
+	margin-left: auto;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.selection-modal-output-insert-icon {
+	margin: 4px 8px 0px 4px;
+}
+
+.selection-modal-output-insert-text {
+	text-align: center;
+}
+
+.selection-modal-output-tip-div {
+	display: flex;
+	flex-direction: row;
+	margin-top: 18px;
+	align-items: start;
+	margin-left: auto;
+}
+
+.selection-modal-output-tip-icon {
+	padding: 0px 4px;
+	margin-top: 2px;
+}
+
+.settings-tab-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.settings-tab-title {
+	margin-left: 8px;
+}
+
+.settings-tab-key-div {
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.settings-tab-key-textbox {
+	background: var(--background-primary-alt);
+	border: 1px solid;
+	border-color: var(--background-modifier-border);
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 8px;
+	line-height: 28px;
+	padding: 8px 16px;
+}
+
+.settings-tab-test-key-div {
+	display: flex;
+	margin-top: 18px;
+	margin-right: auto;
+	margin-bottom: 12px;
+	align-items: center;
+	flex-direction: row;
+}
+
+.settings-tab-test-key-button {
+	padding: 14px 28px;
+	min-height: 36px;
+	width: auto;
+	border-radius: 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.settings-tab-key-state-div {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.settings-tab-key-state-icon {
+	margin-top: 3.5px;
+}
+
+.settings-tab-state-text {
+	margin: 4px 8px 0px 4px;
+	margin-bottom: 3px;
+}
+
+.settings-tab-api-link {
+	margin-top: 14px;
+}
+
+.settings-tab-badge {
+	margin-top: 12px;
+}
+
+.settings-tab-manage-subscription {
+	margin-top: 21px;
+	text-decoration: underline;
+}
+
+.settings-tab-hr {
+	margin-top: 28px;
+	margin-bottom: 8px;
+}
+
+.settings-tab-language-div {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-bottom: 24px;
+}
+
+.settings-tab-langauge-title {
+	margin-left: 8px;
+}
+
+.settings-tab-language-subtiitle-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.settings-tab-language-subtitle {
+	margin-left: 8px;
+}
+
+.settings-tab-language-dropdown {
+	margin-left: 24px;
+	min-height: 38px;
+	font-size: 14px;
+	border-radius: 8px;
+}
+
+.basic-dialog-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.basic-dialog-main-title {
+	margin-left: 8px;
+}
+
+.basic-dialog-main-subtitle {
+	margin-left: 8px;
+}
+
+.basic-dialog-action-button {
+	width: auto;
+	min-width: 130px;
+	font-size: 14px;
+	min-height: 38px;
+	border-radius: 24px;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.basic-dialog-badge {
+	margin-right: auto;
+	margin-left: 10px;
+	margin-bottom: 8px;
+}
+
+.missing-key-dialog-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.missing-key-dialog-title {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.missing-key-dialog-badge {
+	margin-right: auto;
+	margin-top: 14px;
+}
+
+.missing-key-dialog-tip-text {
+	margin-top: 16px;
+}
+
+.missing-key-dialog-action-button {
+	width: auto;
+	min-width: 130px;
+	font-size: 14px;
+	min-height: 38px;
+	border-radius: 24px;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.missing-key-dialog-main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.quota-exceeded-dialog-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.quota-exceeded-dialog-title {
+	margin-left: 8px;
+}
+
+.quota-exceeded-dialog-subtitle {
+	margin-left: 8px;
+}
+
+.quota-exceeded-dialog-manage-subscription-link {
+	text-decoration: underline;
+	color: #47a3fe;
+}
+
+.quota-exceeded-dialog-upgrade-button {
+	width: auto;
+	min-width: 130px;
+	font-size: 14px;
+	min-height: 38px;
+	border-radius: 24px;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.quota-exceeded-dialog-badge {
+	margin-right: auto;
+	margin-left: -10px;
+	margin-bottom: 8px;
+}
+
+.quota-exceeded-dialog-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.settings-dialog-main-div {
+	padding-left: 24px;
+	padding-right: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.settings-dialog-title {
+	margin-left: 8px;
+}
+
+.settings-dialog-api-key-div {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	border-radius: 12px;
+}
+
+.settings-dialog-api-textbox {
+	background: var(--background-primary-alt);
+	border: 1px solid;
+	border-color: var(--background-modifier-border);
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 8px;
+	line-height: 28px;
+	padding: 8px 16px;
+}
+
+.settings-dialog-test-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 18px;
+	margin-right: auto;
+	margin-bottom: 12px;
+}
+
+.settings-dialog-test-key-button {
+	padding: 14px 28px;
+	min-height: 36px;
+	width: auto;
+	border-radius: 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.settings-dialog-test-result-div {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.settings-dialog-test-result-icon {
+	margin-top: 3.5px;
+}
+
+.settings-dialog-test-result-text {
+	margin: 4px 8px 0px 4px;
+	margin-bottom: 3px;
+}
+
+.settings-dialog-anchor{
+	margin-top: 14px;
+}
+
+.settings-dialog-badge{
+	margin-top: 12px;
+}
+
+.settings-dialog-manage-subscription{
+		margin-top: 21px;
+		text-decoration: underline;
+}
+
+.settings-dialog-hr{
+		margin-top: 28px;
+		margin-bottom: 8px;
+}
+
+.settings-dialog-language-div{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin-bottom: 24px;
+}
+
+.settings-dialog-language-title{
+	margin-left: 8px;
+}
+
+.settings-dialog-language-subtitle{
+	margin-left: 8px;
+}
+
+.settings-dialog-row-div{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+}
+
+.settings-dialog-language-dropdown{
+		margin-left: 24px;
+		min-height: 38px;
+		font-size: 14px;
+		border-radius: 8px;
+}
+
+.settings-dialog-container{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+}
