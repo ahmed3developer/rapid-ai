@@ -31,13 +31,6 @@ export class NormalModal extends Modal {
 		this.onInsertButtonClick = onInsertButtonClick;
 	}
 
-	hideOutputPanel() {
-		this.outputDiv.style.display = "none";
-	}
-	showOutputPanel() {
-		this.outputDiv.style.display = "flex";
-	}
-
 	setOutputText(text: string) {
 		this.outputTextBox.setText(text);
 	}
@@ -61,9 +54,9 @@ export class NormalModal extends Modal {
 
 	setOutputVisibility(isVisible: boolean) {
 		if (isVisible) {
-			this.outputDiv.style.display = "flex";
+			this.outputDiv.removeClass("hidden");
 		} else {
-			this.outputDiv.style.display = "none";
+			this.outputDiv.addClass("hidden");
 		}
 	}
 
@@ -172,9 +165,7 @@ export class NormalModal extends Modal {
 	onOpen() {
 		const { contentEl } = this;
 		const divContainer = contentEl.createEl("div");
-		divContainer.style.display = "flex";
-		divContainer.style.flexDirection = "column";
-		divContainer.style.alignItems = "stretch";
+		divContainer.addClass("normal-modal-container");
 
 		const inputDiv = this.createInputPanel();
 		divContainer.appendChild(inputDiv);

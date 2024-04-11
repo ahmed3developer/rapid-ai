@@ -59,9 +59,7 @@ export class BasicDialog extends Modal {
 	onOpen() {
 		const { contentEl } = this;
 		const divContainer = contentEl.createEl("div");
-		divContainer.style.display = "flex";
-		divContainer.style.flexDirection = "column";
-		divContainer.style.alignItems = "stretch";
+		divContainer.addClass("basic-dialog-container");
 
 		const inputDiv = this.createInputPanel();
 		divContainer.appendChild(inputDiv);

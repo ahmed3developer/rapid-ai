@@ -26,19 +26,19 @@ Elevate your productivity with an AI assistant that enables rapid content genera
 
 ## Correct Grammar Quick Action Button Example
 
-[![Correct Grammar Quick Action Button Example](https://img.youtube.com/vi/xwSSV1A5d9Y/0.jpg)](https://www.youtube.com/watch?v=xwSSV1A5d9Y)
+[![Correct Grammar Quick Action Button Example](https://i.imgur.com/iePQ0Rn.png)](https://www.youtube.com/watch?v=xwSSV1A5d9Y)
 
 ## Translate Quick Action Button Example
 
-[![Translate Quick Action Button Example](https://img.youtube.com/vi/oMhOQRrGOG0/0.jpg)](https://www.youtube.com/watch?v=oMhOQRrGOG0)
+[![Translate Quick Action Button Example](https://i.imgur.com/5p31q8R.png)](https://www.youtube.com/watch?v=oMhOQRrGOG0)
 
 ## Generate Diagrams Example
 
-[![Generate Diagrams Example](https://img.youtube.com/vi/ShilXnCGjxQ/0.jpg)](https://www.youtube.com/watch?v=ShilXnCGjxQ)
+[![Generate Diagrams Example](https://i.imgur.com/T192YZt.png)](https://www.youtube.com/watch?v=ShilXnCGjxQ)
 
 ## Adjust Python Code Example
 
-[![Adjust Python Code Example](https://img.youtube.com/vi/fSWkXwvg3d0/0.jpg)](https://www.youtube.com/watch?v=fSWkXwvg3d0)
+[![Adjust Python Code Example](https://i.imgur.com/n8aY3h9.png)](https://www.youtube.com/watch?v=fSWkXwvg3d0)
 
 # How to Get an API Key
 
@@ -50,9 +50,11 @@ This plugin uses an API called 'Obsidian AI API.' To obtain an API key, follow t
 
 You can test the API key by clicking on the “Test Key” button on the plugin settings page. Now you are ready to use the plugin.
 
-You can also watch this tutorial.
+![https://i.imgur.com/sNsVS5K.png](https://i.imgur.com/sNsVS5K.png)
 
-[https://youtu.be/tp3O40bBqs0](https://youtu.be/tp3O40bBqs0)
+### [You can also watch this tutorial.](https://www.youtube.com/watch?v=tp3O40bBqs0)
+
+[![How to Get API Key](https://i.imgur.com/sVi7pL7.png)](https://www.youtube.com/watch?v=tp3O40bBqs0)
 
 # How to Change Shortcuts
 
@@ -68,4 +70,4 @@ You can add and change shortcuts for showing the AI assistant by following these
 
 You can watch this tutorial video.
 
-[https://youtu.be/N8SG263By2Y](https://youtu.be/N8SG263By2Y)
+[![How to Add Keyboard Hotkey](https://i.imgur.com/pAbpRrG.png)](https://www.youtube.com/watch?v=N8SG263By2Y)

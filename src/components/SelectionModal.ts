@@ -60,9 +60,9 @@ export class SelectionModal extends Modal {
 
 	setInputTextVisiblity(isVisible: boolean) {
 		if (isVisible) {
-			this.inputTextBox.style.display = "flex";
+			this.inputTextBox.removeClass("hidden");
 		} else {
-			this.inputTextBox.style.display = "none";
+			this.inputTextBox.addClass("hidden");
 		}
 	}
 
@@ -81,9 +81,9 @@ export class SelectionModal extends Modal {
 
 	setOutputVisibility(isVisible: boolean) {
 		if (isVisible) {
-			this.outputDiv.style.display = "flex";
+			this.outputDiv.removeClass("hidden");
 		} else {
-			this.outputDiv.style.display = "none";
+			this.outputDiv.addClass("hidden");
 		}
 	}
 
@@ -210,11 +210,7 @@ export class SelectionModal extends Modal {
 
 	createTipDiv(): HTMLElement {
 		const input_divTip = document.createElement("div");
-		input_divTip.style.display = "flex";
-		input_divTip.style.flexDirection = "row";
-		input_divTip.style.marginTop = "18px";
-		input_divTip.style.alignItems = "start";
-		input_divTip.style.marginLeft = "auto";
+		input_divTip.addClass("selection-modal-input-tip-div");
 
 		const input_tipIcon = document.createElement("span");
 		input_tipIcon.addClass("selection-modal-output-tip-icon");
@@ -230,9 +226,7 @@ export class SelectionModal extends Modal {
 	onOpen() {
 		const { contentEl } = this;
 		const divContainer = contentEl.createEl("div");
-		divContainer.style.display = "flex";
-		divContainer.style.flexDirection = "column";
-		divContainer.style.alignItems = "stretch";
+		divContainer.addClass("selection-modal-container");
 
 		const inputDiv = this.createInputPanel();
 		divContainer.appendChild(inputDiv);

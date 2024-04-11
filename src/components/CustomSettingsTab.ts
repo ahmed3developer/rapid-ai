@@ -51,9 +51,9 @@ export class CustomSettingsTab extends PluginSettingTab {
 
 	setStatusVisiblity(isVisible: boolean) {
 		if (isVisible) {
-			this.divTestState.style.display = "flex";
+			this.divTestState.removeClass("hidden");
 		} else {
-			this.divTestState.style.display = "none";
+			this.divTestState.addClass("hidden");
 		}
 	}
 
@@ -179,6 +179,7 @@ export class CustomSettingsTab extends PluginSettingTab {
 		const { containerEl } = this;
 		containerEl.empty();
 		containerEl.appendChild(this.createSettingsDiv());
+		this.setStatusVisiblity(false);
 		new Setting(containerEl);
 	}
 }

@@ -5,6 +5,12 @@
 	cursor: pointer;
 }
 
+.normal-modal-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
 .normal-modal-main-div {
 	padding-left: 24;
 	padding-right: 24;
@@ -122,6 +128,12 @@
 
 .normal-modal-ouput-submit-text {
 	text-align: center;
+}
+
+.selection-modal-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .selection-modal-icon-button {
@@ -281,6 +293,14 @@
 	margin-left: auto;
 }
 
+.selection-modal-input-tip-div {
+	display: flex;
+	flex-direction: row;
+	margin-top: 18px;
+	align-items: start;
+	margin-left: auto;
+}
+
 .selection-modal-output-tip-icon {
 	padding: 0px 4px;
 	margin-top: 2px;
@@ -335,7 +355,7 @@
 }
 
 .settings-tab-key-state-div {
-	display: none;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-left: 12px;
@@ -394,6 +414,12 @@
 	min-height: 38px;
 	font-size: 14px;
 	border-radius: 8px;
+}
+
+.basic-dialog-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .basic-dialog-main-div {
@@ -560,7 +586,7 @@
 }
 
 .settings-dialog-test-result-div {
-	display: none;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-left: 12px;
@@ -575,54 +601,62 @@
 	margin-bottom: 3px;
 }
 
-.settings-dialog-anchor{
+.settings-dialog-anchor {
 	margin-top: 14px;
 }
 
-.settings-dialog-badge{
+.settings-dialog-badge {
 	margin-top: 12px;
 }
 
-.settings-dialog-manage-subscription{
-		margin-top: 21px;
-		text-decoration: underline;
+.settings-dialog-manage-subscription {
+	margin-top: 21px;
+	text-decoration: underline;
 }
 
-.settings-dialog-hr{
-		margin-top: 28px;
-		margin-bottom: 8px;
+.settings-dialog-hr {
+	margin-top: 28px;
+	margin-bottom: 8px;
 }
 
-.settings-dialog-language-div{
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		margin-bottom: 24px;
+.settings-dialog-language-div {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-bottom: 24px;
 }
 
-.settings-dialog-language-title{
+.settings-dialog-language-title {
 	margin-left: 8px;
 }
 
-.settings-dialog-language-subtitle{
+.settings-dialog-language-subtitle {
 	margin-left: 8px;
 }
 
-.settings-dialog-row-div{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
+.settings-dialog-row-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.settings-dialog-language-dropdown{
-		margin-left: 24px;
-		min-height: 38px;
-		font-size: 14px;
-		border-radius: 8px;
+.settings-dialog-language-dropdown {
+	margin-left: 24px;
+	min-height: 38px;
+	font-size: 14px;
+	border-radius: 8px;
 }
 
-.settings-dialog-container{
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
+.settings-dialog-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.hidden {
+	display: none;
+}
+
+.badge {
+	display: block;
 }

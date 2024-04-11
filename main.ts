@@ -96,7 +96,6 @@ async function makeAIRequest(
 		return new CustomResponse(Status.Success, content);
 	} catch (e) {
 		const errorMessage: string = e.toString().toLowerCase();
-		console.log(errorMessage);
 		switch (true) {
 			case errorMessage.includes("disconnected"):
 				return new CustomResponse(Status.InternetDisconnected, "");
@@ -311,7 +310,7 @@ export default class RapidAIPlugin extends Plugin {
 					this.emptyPrompt();
 					return;
 				}
-				modal.hideOutputPanel();
+				modal.setOutputVisibility(false);
 				modal.setLoading(true);
 
 				const result = await makeAIRequest(
@@ -321,7 +320,7 @@ export default class RapidAIPlugin extends Plugin {
 				if (result.status == Status.Success) {
 					modal.setOutputText(result.body);
 					modal.setLoading(false);
-					modal.showOutputPanel();
+					modal.setOutputVisibility(true);
 				} else {
 					this.requestFailed(modal, result);
 				}
@@ -336,7 +335,7 @@ export default class RapidAIPlugin extends Plugin {
 			},
 		});
 		modal.open();
-		modal.hideOutputPanel();
+		modal.setOutputVisibility(false);
 	}
 
 	openSelectionModal(selectedText: string, translationLanguage: string) {
@@ -510,7 +509,6 @@ export default class RapidAIPlugin extends Plugin {
 		const item = this.addStatusBarItem();
 		item.createEl("button");
 		setIcon(item, "cpu");
-		// item.style.color = "#FFCA28";
 		item.addEventListener("click", () => {
 			this.openModal();
 		});
@@ -532,7 +530,6 @@ export default class RapidAIPlugin extends Plugin {
 		this.addCommand({
 			id: "ask-ai",
 			name: "Ask AI",
-			hotkeys: [],
 			callback: () => {
 				this.openModal();
 			},

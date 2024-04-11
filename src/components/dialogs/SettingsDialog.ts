@@ -47,9 +47,9 @@ export class SettingsDialog extends Modal {
 
 	setStatusVisiblity(isVisible: boolean) {
 		if (isVisible) {
-			this.divTestResult.style.display = "flex";
+			this.divTestResult.removeClass("hidden");
 		} else {
-			this.divTestResult.style.display = "none";
+			this.divTestResult.addClass("hidden");
 		}
 	}
 
@@ -167,8 +167,8 @@ export class SettingsDialog extends Modal {
 		const { contentEl } = this;
 		const divContainer = contentEl.createEl("div");
 		divContainer.addClass("settings-dialog-container");
-
 		divContainer.appendChild(this.createSettingsDiv());
+		this.setStatusVisiblity(false);
 	}
 
 	onClose() {
