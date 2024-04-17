@@ -15,7 +15,7 @@ export class SettingsDialog extends Modal {
 	private txtTestResult: HTMLSpanElement;
 	private iconTestResult: HTMLSpanElement;
 	private divTestResult: HTMLDivElement;
-	private TestButtonContent = "Test API Key";
+	private TestButtonContent = "Test API key";
 	constructor(
 		app: App,
 		{
@@ -66,7 +66,7 @@ export class SettingsDialog extends Modal {
 		divMain.addClass("settings-dialog-main-div");
 
 		const titleText = document.createElement("h4");
-		titleText.innerText = "Rapid API Key";
+		titleText.innerText = "Rapid API key";
 		titleText.addClass("settings-dialog-title");
 		divMain.appendChild(titleText);
 
@@ -104,7 +104,7 @@ export class SettingsDialog extends Modal {
 
 		this.txtTestResult = document.createElement("span");
 		this.txtTestResult.addClass("settings-dialog-test-result-text");
-		this.txtTestResult.innerText = "It Works Perfctly";
+		this.txtTestResult.innerText = "It works perfectly";
 		this.divTestResult.appendChild(this.txtTestResult);
 
 		const anchorElement = document.createElement("a");
@@ -120,7 +120,7 @@ export class SettingsDialog extends Modal {
 
 		const manageSubscription = document.createElement("a");
 		manageSubscription.href = API_MANAGEMENT_URL;
-		manageSubscription.text = "Check Usage & Manage Subscription";
+		manageSubscription.text = "Check usage & manage subscription";
 		manageSubscription.addClass("settings-dialog-manage-subscription");
 		manageSubscription.target = "_blank";
 		divMain.appendChild(manageSubscription);

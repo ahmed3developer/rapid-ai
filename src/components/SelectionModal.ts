@@ -70,7 +70,7 @@ export class SelectionModal extends Modal {
 		if (isLoading) {
 			this.sendButton.innerText = "Processing ...";
 		} else {
-			this.sendButton.innerText = "Send Message";
+			this.sendButton.innerText = "Send message";
 		}
 		this.inputTextBox.readOnly = isLoading;
 
@@ -106,7 +106,7 @@ export class SelectionModal extends Modal {
 
 		const input_titleText = document.createElement("h4");
 		input_titleText.addClass("selection-modal-input-title");
-		input_titleText.innerText = "Selected Text";
+		input_titleText.innerText = "Selected text";
 		input_divTitle.appendChild(input_titleText);
 
 		const input_divSelectedText = document.createElement("div");
@@ -126,7 +126,7 @@ export class SelectionModal extends Modal {
 		this.inputDiv.appendChild(divActions);
 
 		this.correctGrammarButton = createIconButton(
-			"Correct Grammar",
+			"Correct grammar",
 			"spell-check",
 			this.onCorrectGrammarClick
 		);
@@ -141,7 +141,7 @@ export class SelectionModal extends Modal {
 		divActions.appendChild(this.translateButton);
 
 		this.formatButton = createIconButton(
-			"Fromat",
+			"Format",
 			"align-center",
 			this.onFormatClick
 		);
@@ -156,7 +156,7 @@ export class SelectionModal extends Modal {
 		input_divTextBox.appendChild(this.inputTextBox);
 
 		this.sendButton = document.createElement("button");
-		this.sendButton.innerText = "Send Message";
+		this.sendButton.innerText = "Send message";
 		this.sendButton.addClass("selection-modal-send-button");
 		this.sendButton.addEventListener("click", this.onSendButtonClick);
 		this.inputDiv.appendChild(this.sendButton);
@@ -218,7 +218,7 @@ export class SelectionModal extends Modal {
 		input_divTip.appendChild(input_tipIcon);
 
 		const input_tipEnding = document.createElement("span");
-		input_tipEnding.innerText = "to Send";
+		input_tipEnding.innerText = "to send";
 		input_divTip.appendChild(input_tipEnding);
 		return input_divTip;
 	}

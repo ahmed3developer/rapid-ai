@@ -9,7 +9,7 @@ export function getBadge(width: number, link: string = API_URL) {
 	imageElement.src =
 		"https://storage.googleapis.com/rapidapi-documentation/connect-on-rapidapi-light.png";
 	imageElement.width = width;
-	imageElement.alt = "Connect on RapidAPI";
+	imageElement.alt = "Connect on rapid API";
 
 	anchorElement.appendChild(imageElement);
 	return anchorElement;

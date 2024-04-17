@@ -24,7 +24,7 @@ export class QuotaExceededDialog extends Modal {
 
 		const txtTitle = document.createElement("h4");
 		txtTitle.addClass("quota-exceeded-dialog-title");
-		txtTitle.innerText = "Plan Quota Limit Reached";
+		txtTitle.innerText = "Plan quota limit reached";
 		divMain.appendChild(txtTitle);
 
 		const divRow = document.createElement("div");
@@ -33,14 +33,14 @@ export class QuotaExceededDialog extends Modal {
 		const txtSubtitle = document.createElement("span");
 		txtSubtitle.addClass("quota-exceeded-dialog-subtitle");
 		txtSubtitle.setText(
-			"It seems your plan has reached its quota limit. Consider upgrading to a higher plan. "
+			"It seems your plan has reached its quota limit. Consider upgrading to a higher plan."
 		);
 
 		divRow.appendChild(txtSubtitle);
 
 		const manageSubscription = document.createElement("a");
 		manageSubscription.href = API_MANAGEMENT_URL;
-		manageSubscription.text = "Check Usage & Manage Subscription";
+		manageSubscription.text = "Check usage & manage subscription";
 		manageSubscription.target = "_blank";
 		manageSubscription.addClass(
 			"quota-exceeded-dialog-manage-subscription-link"
@@ -48,7 +48,7 @@ export class QuotaExceededDialog extends Modal {
 		divRow.appendChild(manageSubscription);
 
 		this.upgradeButton = document.createElement("button");
-		this.upgradeButton.innerText = "Upgrade Plan";
+		this.upgradeButton.innerText = "Upgrade plan";
 		this.upgradeButton.addClass("quota-exceeded-dialog-upgrade-button");
 		this.upgradeButton.addEventListener("click", this.onUpgradeButtonClick);
 		divMain.appendChild(this.upgradeButton);

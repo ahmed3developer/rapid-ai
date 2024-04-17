@@ -80,7 +80,6 @@ async function makeAIRequest(
 	}
 
 	const body = {
-		model: "gpt-3.5-turbo",
 		prompts: targetMessages,
 	};
 
@@ -258,7 +257,7 @@ export default class RapidAIPlugin extends Plugin {
 			title: "Invalid API key",
 			subtitle:
 				"Please use a valid API key. You can change it from the settings.",
-			action: "Go to Settings",
+			action: "Go to settings",
 			onActionButtonClick: () => {
 				this.showSettingsDialog();
 				dialog.close();
@@ -290,7 +289,7 @@ export default class RapidAIPlugin extends Plugin {
 				this.showInvalidAPIKey();
 				break;
 			case Status.UnknownError:
-				new Notice("An Error Occurred. Please try again later");
+				new Notice("An error occurred. Please try again later");
 				break;
 			case Status.EmptyPrompt:
 				new Notice("Please enter the prompt");
@@ -299,7 +298,7 @@ export default class RapidAIPlugin extends Plugin {
 	}
 
 	emptyPrompt() {
-		new Notice("Please the prompt");
+		new Notice("Please enter the prompt");
 	}
 
 	openNormalModal() {
@@ -374,7 +373,7 @@ export default class RapidAIPlugin extends Plugin {
 				await quickAction(modal, "You are an a grammar corrector");
 			},
 			onFormatClick: async () => {
-				await quickAction(modal, "You are an markdown formatter");
+				await quickAction(modal, "You are a markdown formatter");
 			},
 			onTranslateClick: async () => {
 				await quickAction(
@@ -445,10 +444,10 @@ export default class RapidAIPlugin extends Plugin {
 		};
 		switch (result.status) {
 			case Status.Success:
-				setStatus(dialog, "It Works Perfctly", "badge-check");
+				setStatus(dialog, "It works perfectly", "badge-check");
 				break;
 			case Status.InternetDisconnected:
-				setStatus(dialog, "Internet Disconnected", "unplug");
+				setStatus(dialog, "Internet disconnected", "unplug");
 				break;
 			case Status.ExceededQuota:
 				setStatus(
@@ -458,7 +457,7 @@ export default class RapidAIPlugin extends Plugin {
 				);
 				break;
 			case Status.InvalidAPIKey:
-				setStatus(dialog, "Invalid API Key", "ban");
+				setStatus(dialog, "Invalid API key", "ban");
 				break;
 			case Status.UserUnsubscribed:
 				setStatus(
@@ -468,10 +467,10 @@ export default class RapidAIPlugin extends Plugin {
 				);
 				break;
 			case Status.EmptyAPIKey:
-				setStatus(dialog, "Missing API Key", "key-round");
+				setStatus(dialog, "Missing API key", "key-round");
 				break;
 			default:
-				setStatus(dialog, "Invalid API Key", "ban");
+				setStatus(dialog, "Invalid API key", "ban");
 				break;
 		}
 

@@ -26,7 +26,7 @@ export class MissingAPIKeyDialog extends Modal {
 		divMain.addClass("missing-key-dialog-main-div");
 
 		const txtTitle = document.createElement("h3");
-		txtTitle.innerText = "Missing API Key";
+		txtTitle.innerText = "Missing API key";
 		txtTitle.addClass("missing-key-dialog-title");
 		divMain.appendChild(txtTitle);
 
@@ -47,7 +47,7 @@ export class MissingAPIKeyDialog extends Modal {
 		divMain.appendChild(txtSettingsTip);
 
 		this.actionButton = document.createElement("button");
-		this.actionButton.innerText = "Go to Settings";
+		this.actionButton.innerText = "Go to settings";
 		this.actionButton.addClass("missing-key-dialog-action-button");
 		this.actionButton.addEventListener("click", this.onGoToSettingsClick);
 		divMain.appendChild(this.actionButton);

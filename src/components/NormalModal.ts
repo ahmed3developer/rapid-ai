@@ -39,7 +39,7 @@ export class NormalModal extends Modal {
 		if (isLoading) {
 			this.sendButton.innerText = "Processing ...";
 		} else {
-			this.sendButton.innerText = "Send Message";
+			this.sendButton.innerText = "Send message";
 		}
 		this.inputTextBox.readOnly = isLoading;
 	}
@@ -108,7 +108,7 @@ export class NormalModal extends Modal {
 
 		this.sendButton = document.createElement("button");
 		this.sendButton.addClass("normal-modal-input-send-button");
-		this.sendButton.innerText = "Send Message";
+		this.sendButton.innerText = "Send message";
 		this.sendButton.addEventListener("click", this.onSendButtonClick);
 		divInput.appendChild(this.sendButton);
 
@@ -156,7 +156,7 @@ export class NormalModal extends Modal {
 
 		const submitText = document.createElement("span");
 		submitText.addClass("normal-modal-ouput-submit-text");
-		submitText.setText("Submit on Editor");
+		submitText.setText("Submit on editor");
 		divButtonContent.appendChild(submitText);
 
 		return this.outputDiv;

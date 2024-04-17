@@ -44,17 +44,17 @@ Elevate your productivity with an AI assistant that enables rapid content genera
 
 This plugin uses an API called 'Obsidian AI API.' To obtain an API key, follow these steps:
 
--   Subscribe to the API [from here](https://rapidapi.com/obsidian-api-obsidian-api-default/api/obsidian-ai).
+-   Subscribe to the API [from here](https://rapidapi.com/instant-ai-instant-ai-default/api/rapid-ai-bridge/).
 -   Copy the API key from the `X-RapidAPI-Key` field.
 -   Navigate to the plugin settings and paste the API key into the `API Key` textbox.
 
 You can test the API key by clicking on the “Test Key” button on the plugin settings page. Now you are ready to use the plugin.
 
-![https://i.imgur.com/sNsVS5K.png](https://i.imgur.com/sNsVS5K.png)
+![https://i.imgur.com/j9qHhQZ.png](https://i.imgur.com/j9qHhQZ.png)
 
-### [You can also watch this tutorial.](https://www.youtube.com/watch?v=tp3O40bBqs0)
+### [You can also watch this tutorial.](https://www.youtube.com/watch?v=Nd3HvCJvU4g)
 
-[![How to Get API Key](https://i.imgur.com/sVi7pL7.png)](https://www.youtube.com/watch?v=tp3O40bBqs0)
+[![How to Get API Key](https://i.imgur.com/sVi7pL7.png)](https://www.youtube.com/watch?v=Nd3HvCJvU4g)
 
 # How to Change Shortcuts
 

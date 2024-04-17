@@ -22,7 +22,7 @@ export class CustomSettingsTab extends PluginSettingTab {
 	private txtTestStatus: HTMLSpanElement;
 	private iconTestStatus: HTMLSpanElement;
 	private divTestState: HTMLDivElement;
-	private TestButtonContent = "Test API Key";
+	private TestButtonContent = "Test API key";
 
 	constructor(
 		app: App,
@@ -71,7 +71,7 @@ export class CustomSettingsTab extends PluginSettingTab {
 
 		const titleText = document.createElement("h4");
 		titleText.addClass("settings-tab-title");
-		titleText.innerText = "Rapid API Key";
+		titleText.innerText = "Rapid API key";
 		divMain.appendChild(titleText);
 
 		const input_divTextBox = document.createElement("div");
@@ -109,7 +109,7 @@ export class CustomSettingsTab extends PluginSettingTab {
 
 		this.txtTestStatus = document.createElement("span");
 		this.txtTestStatus.addClass("settings-tab-state-text");
-		this.txtTestStatus.innerText = "It Works Perfctly";
+		this.txtTestStatus.innerText = "It works perfectly";
 		this.divTestState.appendChild(this.txtTestStatus);
 
 		const anchorElement = document.createElement("a");
@@ -140,7 +140,7 @@ export class CustomSettingsTab extends PluginSettingTab {
 		const manageSubscription = document.createElement("a");
 		manageSubscription.addClass("settings-tab-manage-subscription");
 		manageSubscription.href = API_MANAGEMENT_URL;
-		manageSubscription.text = "Check Usage & Manage Subscription";
+		manageSubscription.text = "Check usage & manage subscription";
 		manageSubscription.target = "_blank";
 		return manageSubscription;
 	}
