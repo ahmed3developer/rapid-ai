@@ -1,7 +1,7 @@
 {
 	"id": "rapid-ai",
 	"name": "Rapid AI",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.5.12",
 	"description": "AI Assistant for selected text and generating content with Markdown. Shortcuts and quick action buttons provide instant AI assistance. It provides a high availability API for unlimited Chat GPT request rates, so you can ensure smooth work for any workload.",
 	"author": "Instant AI",
