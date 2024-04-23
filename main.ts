@@ -37,7 +37,7 @@ async function makeAIRequest(
 	if (apiKey.trim() == "") {
 		return new CustomResponse(Status.EmptyAPIKey, "");
 	}
-	const url = "https://obsidian-ai.p.rapidapi.com/";
+	const url = "https://rapid-ai-bridge.p.rapidapi.com/";
 	const headers = {
 		"Content-Type": "application/json",
 		"X-RapidAPI-Key": apiKey,
@@ -112,7 +112,7 @@ async function invokeKey(apiKey: string): Promise<CustomResponse> {
 	if (apiKey.trim() == "") {
 		return new CustomResponse(Status.EmptyAPIKey, "");
 	}
-	const url = "https://obsidian-ai.p.rapidapi.com/";
+	const url = "https://rapid-ai-bridge.p.rapidapi.com/";
 	const headers = {
 		"Content-Type": "application/json",
 		"X-RapidAPI-Key": apiKey,
