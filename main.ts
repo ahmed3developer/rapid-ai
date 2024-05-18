@@ -71,7 +71,7 @@ async function makeAIRequest(
 		}
 	} else {
 		const instruction = `Today is ${moment().format(
-			"YYYY-MM-DD"
+			"YYYY-MM-DD dddd"
 		)}, local time is ${moment().format("HH:mm:ss")}. ${straighforward}`;
 		targetMessages.push(
 			{ role: "system", content: instruction },
